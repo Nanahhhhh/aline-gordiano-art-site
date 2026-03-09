@@ -75,7 +75,7 @@ export default function ContactPage() {
               className="text-sm text-[#6B6B6B] leading-relaxed"
               style={{ fontFamily: 'var(--font-inter), sans-serif' }}
             >
-              The contact structure is now ready for real artwork enquiries. Once the final photos and details are uploaded, this page can stay as it is.
+              Collectors, interior projects and direct artwork enquiries are welcome.
             </p>
           </div>
         </div>

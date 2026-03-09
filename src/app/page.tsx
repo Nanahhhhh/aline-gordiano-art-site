@@ -5,9 +5,17 @@ import ArtworkCard from '@/components/ArtworkCard';
 import { getFeaturedArtworks } from '@/data/artworks';
 
 export const metadata: Metadata = {
-  title: 'Home',
+  title: 'Aline Gordiano | Contemporary Painter in London | Original Acrylic Paintings',
   description:
-    'Discover original acrylic paintings and selected prints by Aline Gordiano, a London-based contemporary artist.',
+    'Original acrylic paintings shaped by colour, texture and atmosphere. Explore the work of London-based artist Aline Gordiano.',
+  openGraph: {
+    title: 'Aline Gordiano | Contemporary Painter in London | Original Acrylic Paintings',
+    description:
+      'Original acrylic paintings shaped by colour, texture and atmosphere. Explore the work of London-based artist Aline Gordiano.',
+    images: [{ url: '/artworks/einstein-portrait.svg', alt: 'Einstein Portrait by Aline Gordiano' }],
+    siteName: 'Aline Gordiano Art',
+    type: 'website',
+  },
 };
 
 const jsonLd = {
@@ -71,13 +79,13 @@ export default function HomePage() {
               className="text-base text-[#6B6B6B] tracking-widest uppercase mb-5"
               style={{ fontFamily: 'var(--font-inter), sans-serif', fontWeight: 400 }}
             >
-              Original Paintings · London
+              Original acrylic paintings shaped by colour, texture and atmosphere.
             </p>
             <p
               className="text-sm text-[#6B6B6B] max-w-xl leading-relaxed mb-10 mx-auto lg:mx-0"
               style={{ fontFamily: 'var(--font-inter), sans-serif' }}
             >
-              Original contemporary paintings by Aline Gordiano, exploring colour, texture and expressive landscapes.
+              Aline Gordiano is a London-based artist creating original works in acrylic on canvas, with a focus on expressive portraiture, luminous landscapes and painterly texture.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -92,8 +100,8 @@ export default function HomePage() {
 
           <div className="relative w-full max-w-[540px] mx-auto lg:mx-0 aspect-[4/5] overflow-hidden bg-[#EDE8E2] shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
             <Image
-              src="/artworks/site-hero-placeholder.svg"
-              alt="Featured painting placeholder for Aline Gordiano Art"
+              src="/artworks/einstein-portrait.svg"
+              alt="Einstein Portrait by Aline Gordiano"
               fill
               priority
               className="object-cover"
@@ -118,7 +126,7 @@ export default function HomePage() {
             className="text-sm text-[#6B6B6B] max-w-md leading-relaxed"
             style={{ fontFamily: 'var(--font-inter), sans-serif' }}
           >
-            A curated selection of original acrylic paintings and selected works currently available.
+            A curated selection of original acrylic paintings exploring portraiture, landscape, colour and texture.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -144,10 +152,10 @@ export default function HomePage() {
               About the Artist
             </h2>
             <p className="text-sm text-[#A09890] leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              Aline Gordiano is a Brazilian artist based in London. Her work centres on expressive painting, with a focus on colour, texture and atmosphere.
+              Aline Gordiano is a Brazilian artist based in London. Her practice centres on original acrylic painting, with a focus on expressive surfaces, atmosphere and emotionally resonant imagery.
             </p>
             <p className="text-sm text-[#A09890] leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              Based in London, she works from her studio producing original paintings and selected prints, with a focus on unique works and expressive contemporary painting.
+              Based in London, she develops paintings that move between portraiture and landscape, balancing colour, structure and texture in a contemporary visual language.
             </p>
             <Link href="/about" className="btn-outline border-[#F5F2EE] text-[#F5F2EE] hover:bg-[#F5F2EE] hover:text-[#1F1F1F] self-start" id="about-read-more">
               Read More
@@ -156,12 +164,34 @@ export default function HomePage() {
           <div className="relative h-80 md:h-[480px] bg-[#2E2A26] overflow-hidden order-1 md:order-2">
             <Image
               src="/artist-placeholder.svg"
-              alt="Artist portrait placeholder"
+              alt="Portrait of Aline Gordiano"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 40vw"
             />
           </div>
+        </div>
+      </section>
+
+      {/* upcoming work preview */}
+      <section className="py-20 px-6 lg:px-12 max-w-5xl mx-auto">
+        <div className="mb-12 text-center">
+          <h2 className="section-title">In Progress</h2>
+        </div>
+        <div className="max-w-md mx-auto">
+          <div className="relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden">
+            <Image
+              src="/artworks/morning-cup.jpg"
+              alt="Morning Cup in progress"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+            />
+          </div>
+          <h3 className="text-xl mt-4">Morning Cup</h3>
+          <p className="text-sm text-[#6B6B6B] max-w-lg leading-relaxed">
+            A quiet interior painting exploring morning light, shadow and stillness. Currently in development.
+          </p>
         </div>
       </section>
 

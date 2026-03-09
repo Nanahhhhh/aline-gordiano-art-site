@@ -21,51 +21,54 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://aline-gordiano-art.vercel.app'),
+  metadataBase: new URL('https://alinegordiano.art'),
+
   title: {
-    default: 'Aline Gordiano Art — Original Paintings, London',
+    default: 'Aline Gordiano | Contemporary Painter in London | Original Acrylic Paintings',
     template: '%s | Aline Gordiano Art',
   },
+
   description:
-    'Original acrylic paintings and selected prints by Aline Gordiano, a London-based contemporary artist.',
+    'Original contemporary acrylic paintings by London-based artist Aline Gordiano. Expressive landscapes, portraits and textured artworks available for collectors worldwide.',
+
   keywords: [
-    'London artist',
-    'original paintings London',
-    'acrylic artist London',
+    'contemporary artist London',
+    'original acrylic paintings',
+    'London based painter',
+    'Brazilian artist London',
     'contemporary art London',
-    'Brazilian artist in London',
+    'original artwork for sale',
+    'expressive landscape painting',
     'Aline Gordiano',
   ],
+
   authors: [{ name: 'Aline Gordiano' }],
   creator: 'Aline Gordiano',
+
   openGraph: {
-    type: 'website',
-    locale: 'en_GB',
-    url: 'https://aline-gordiano-art.vercel.app',
-    siteName: 'Aline Gordiano Art',
-    title: 'Aline Gordiano Art — Original Paintings, London',
+    title: 'Aline Gordiano | Contemporary Painter in London | Original Acrylic Paintings',
     description:
-      'Discover original acrylic paintings and selected prints by London-based artist Aline Gordiano.',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Aline Gordiano Art — Original Paintings',
-      },
-    ],
+      'Original contemporary acrylic paintings by London-based artist Aline Gordiano.',
+    url: 'https://alinegordiano.art',
+    siteName: 'Aline Gordiano Art',
+    locale: 'en_GB',
+    type: 'website',
   },
+
   twitter: {
     card: 'summary_large_image',
-    title: 'Aline Gordiano Art — Original Paintings, London',
+    title: 'Aline Gordiano | Contemporary Painter in London | Original Acrylic Paintings',
     description:
-      'Discover original acrylic paintings and selected prints by London-based artist Aline Gordiano.',
-    images: ['/og-image.png'],
+      'Original contemporary acrylic paintings by London-based artist Aline Gordiano.',
   },
+
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 

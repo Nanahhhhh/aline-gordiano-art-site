@@ -182,4 +182,14 @@
     padding: 3px 10px;
     border-radius: 20px;
   }
+  .badge-upcoming {
+    background: #eceff1;
+    color: #546e7a;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
 }

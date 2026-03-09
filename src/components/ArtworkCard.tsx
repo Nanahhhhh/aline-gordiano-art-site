@@ -7,12 +7,13 @@ interface ArtworkCardProps {
 }
 
 function StatusBadge({ status }: { status: Artwork['status'] }) {
-  const map = {
+  const map: Record<Artwork['status'], { label: string; className: string }> = {
     available: { label: 'Available', className: 'badge-available' },
     sold: { label: 'Sold', className: 'badge-sold' },
     'on request': { label: 'On Request', className: 'badge-request' },
-  };
-  const { label, className } = map[status];
+    upcoming: { label: 'In Progress', className: 'badge-upcoming' },
+  } as const;
+  const { label, className } = map[status] ?? { label: status, className: '' };
   return <span className={className}>{label}</span>;
 }
 

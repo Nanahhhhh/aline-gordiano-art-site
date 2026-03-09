@@ -20,7 +20,7 @@ export default function AboutPage() {
         <div className="relative aspect-[3/4] bg-[#EDE8E2] overflow-hidden">
           <Image
             src="/artist-placeholder.svg"
-            alt="Aline Gordiano portrait placeholder"
+            alt="Portrait of Aline Gordiano"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 45vw"
@@ -37,7 +37,7 @@ export default function AboutPage() {
               Artist Statement
             </h2>
             <p className="text-sm leading-relaxed text-[#6B6B6B]" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              Aline Gordiano is a Brazilian artist based in London. Her work centres on expressive painting, with a focus on colour, texture and atmosphere.
+              Aline Gordiano is a Brazilian artist based in London. Her work focuses on original acrylic painting, exploring colour, atmosphere and textured mark-making through portrait and landscape compositions.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function AboutPage() {
               Practice
             </h2>
             <p className="text-sm leading-relaxed text-[#6B6B6B]" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              Working primarily with acrylic on canvas, she creates original pieces that explore emotional landscapes, movement and quiet moments of contemplation. Her paintings are often built through layered marks, subtle contrasts and luminous colour.
+              Working primarily in acrylic on canvas, she develops paintings with an emphasis on surface, contrast and emotional resonance. Her practice moves between luminous landscapes and expressive figurative studies, always guided by a strong sensitivity to colour and painterly texture.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function AboutPage() {
               Works & Availability
             </h2>
             <p className="text-sm leading-relaxed text-[#6B6B6B]" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              Her practice currently focuses on unique original works, with selected prints available on chosen pieces. This website is structured to present original paintings clearly, with room to add final artwork photography, pricing and availability.
+              Her current body of work includes original one-of-a-kind paintings, with selected prints in development. Available works are presented through the gallery, and enquiries regarding collectors, availability and future releases can be made through the contact page.
             </p>
             <p className="text-sm leading-relaxed text-[#6B6B6B] mt-4" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
               <strong className="text-[#1F1F1F] font-medium">Based in London, United Kingdom.</strong>

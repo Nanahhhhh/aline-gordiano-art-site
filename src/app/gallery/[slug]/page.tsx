@@ -32,6 +32,7 @@ function StatusBadge({ status }: { status: string }) {
     available: { label: 'Available', className: 'badge-available' },
     sold: { label: 'Sold', className: 'badge-sold' },
     'on request': { label: 'On Request', className: 'badge-request' },
+    upcoming: { label: 'In Progress', className: 'badge-upcoming' },
   };
   const { label, className } = map[status] ?? { label: status, className: '' };
   return <span className={className}>{label}</span>;
@@ -55,15 +56,33 @@ export default async function ArtworkDetailPage({ params }: Props) {
       </nav>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-        <div className="relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden">
-          <Image
-            src={artwork.image}
-            alt={artwork.alt}
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            priority
-          />
+        <div>
+          <div className="relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden">
+            <Image
+              src={artwork.image}
+              alt={artwork.alt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
+            />
+          </div>
+          {artwork.extraImages && artwork.extraImages.length > 0 && (
+            <div className="mt-6 grid grid-cols-2 gap-4">
+              {artwork.extraImages.map((src, idx) => (
+                <div key={idx} className="relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden">
+                  <Image
+                    src={src}
+                    alt={`${artwork.title} detail ${idx + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 25vw"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="flex flex-col gap-6 lg:sticky lg:top-28">

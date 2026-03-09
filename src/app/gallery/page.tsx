@@ -5,12 +5,13 @@ import { artworks } from '@/data/artworks';
 export const metadata: Metadata = {
   title: 'Gallery',
   description:
-    'Browse original acrylic paintings by Aline Gordiano — London-based contemporary artist. View available works, sold pieces and selected originals.',
+    'Browse original acrylic paintings by London-based artist Aline Gordiano. Explore available works, sold pieces and upcoming paintings in a curated portfolio.',
 };
 
 export default function GalleryPage() {
-  const available = artworks.filter((artwork) => artwork.status !== 'sold');
+  const available = artworks.filter((artwork) => artwork.status === 'available');
   const sold = artworks.filter((artwork) => artwork.status === 'sold');
+  const upcoming = artworks.filter((artwork) => artwork.status === 'upcoming');
 
   return (
     <div className="pt-32 pb-24 px-6 lg:px-12 max-w-7xl mx-auto">
@@ -21,7 +22,7 @@ export default function GalleryPage() {
           className="text-sm text-[#6B6B6B] max-w-lg leading-relaxed"
           style={{ fontFamily: 'var(--font-inter), sans-serif' }}
         >
-          Original acrylic paintings on canvas and linen. Each work is presented as a unique piece, with selected works marked as available or sold.
+          Original acrylic paintings on canvas. A curated portfolio of available works, sold pieces and upcoming projects.
         </p>
       </div>
 
@@ -40,6 +41,21 @@ export default function GalleryPage() {
           ))}
         </div>
       </section>
+
+      {upcoming.length > 0 && (
+        <section className="mb-20">
+          <div className="flex items-center justify-between gap-4 mb-8 flex-wrap">
+            <h2 className="text-3xl text-[#1F1F1F]" style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 400 }}>
+              Upcoming Work
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            {upcoming.map((artwork) => (
+              <ArtworkCard key={artwork.slug} artwork={artwork} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {sold.length > 0 && (
         <section>

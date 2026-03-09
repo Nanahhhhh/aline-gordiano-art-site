@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Prints',
+  title: 'Selected Prints',
   description:
-    'Selected prints by Aline Gordiano. Print releases and final details will be added soon.',
+    'A dedicated prints section is currently in preparation. Final print formats, sizes and release details will be published once the collection is finalised.',
 };
 
 export default function ShopPage() {
@@ -14,7 +14,7 @@ export default function ShopPage() {
         <div className="divider" aria-hidden />
         <h1 className="section-title">Selected Prints</h1>
         <p className="text-sm text-[#6B6B6B] leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-          A dedicated prints section is being prepared. Final print options, sizes and release details will be added once the original artwork photography is complete.
+          A dedicated prints section is currently in preparation. Final print formats, sizes and release details will be added once the original artwork photography and first collection are fully finalised.
         </p>
       </div>
 
@@ -30,9 +30,9 @@ export default function ShopPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            'Selected artworks only',
-            'Final sizes to be confirmed',
-            'Launch details coming soon',
+            'Selected works only',
+            'Limited release',
+            'Details to be confirmed',
           ].map((item) => (
             <div key={item} className="border border-[#E5E0D8] p-6">
               <p className="text-sm text-[#1F1F1F]" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
