@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Aline Gordiano | Contemporary Painter in London | Original Acrylic Paintings',
     description:
       'Original acrylic paintings shaped by colour, texture and atmosphere. Explore the work of London-based artist Aline Gordiano.',
-    images: [{ url: '/artworks/einstein-portrait.svg', alt: 'Einstein Portrait by Aline Gordiano' }],
+    images: [{ url: '/artworks/einstein-portrait.jpeg', alt: 'Einstein Portrait by Aline Gordiano' }],
     siteName: 'Aline Gordiano Art',
     type: 'website',
   },
@@ -100,7 +100,7 @@ export default function HomePage() {
 
           <div className="relative w-full max-w-[540px] mx-auto lg:mx-0 aspect-[4/5] overflow-hidden bg-[#EDE8E2] shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
             <Image
-              src="/artworks/einstein-portrait.svg"
+              src="/artworks/einstein-portrait.jpeg"
               alt="Einstein Portrait by Aline Gordiano"
               fill
               priority
@@ -163,7 +163,7 @@ export default function HomePage() {
           </div>
           <div className="relative h-80 md:h-[480px] bg-[#2E2A26] overflow-hidden order-1 md:order-2">
             <Image
-              src="/artist-placeholder.svg"
+              src="/artworks/aline-gordiano-artist.jpeg"
               alt="Portrait of Aline Gordiano"
               fill
               className="object-cover"
@@ -173,27 +173,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* upcoming work preview */}
-      <section className="py-20 px-6 lg:px-12 max-w-5xl mx-auto">
-        <div className="mb-12 text-center">
-          <h2 className="section-title">In Progress</h2>
-        </div>
-        <div className="max-w-md mx-auto">
-          <div className="relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden">
-            <Image
-              src="/artworks/morning-cup.jpg"
-              alt="Morning Cup in progress"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 40vw"
-            />
-          </div>
-          <h3 className="text-xl mt-4">Morning Cup</h3>
-          <p className="text-sm text-[#6B6B6B] max-w-lg leading-relaxed">
-            A quiet interior painting exploring morning light, shadow and stillness. Currently in development.
-          </p>
-        </div>
-      </section>
+
 
       <section className="py-20 px-6 lg:px-12 max-w-4xl mx-auto text-center">
         <div className="divider mx-auto mb-8" aria-hidden />

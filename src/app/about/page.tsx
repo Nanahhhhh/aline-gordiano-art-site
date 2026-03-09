@@ -19,7 +19,7 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
         <div className="relative aspect-[3/4] bg-[#EDE8E2] overflow-hidden">
           <Image
-            src="/artist-placeholder.svg"
+            src="/artworks/aline-gordiano-artist.jpeg"
             alt="Portrait of Aline Gordiano"
             fill
             className="object-cover"
