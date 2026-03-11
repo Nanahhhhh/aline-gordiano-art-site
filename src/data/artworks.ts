@@ -63,6 +63,21 @@ export const artworks: Artwork[] = [
       'An expressive study conveying quiet power and movement through rich reds and textural brushwork.',
     extraImages: ['/artworks/silent-strength-overview.jpeg'],
   },
+  {
+    slug: 'quiet-tea',
+    title: 'Quiet Tea',
+    year: 2026,
+    medium: 'Acrylic on canvas',
+    dimensions: '30 × 40 cm',
+    status: 'available',
+    tags: ['interior', 'still-life', 'light'],
+    image: '/artworks/quiet-tea.jpeg',
+    alt: 'Quiet Tea by Aline Gordiano',
+    featured: false,
+    description:
+      'A quiet interior moment captured through warm light and stillness — a simple cup of tea resting in the morning glow.',
+    extraImages: ['/artworks/quiet-tea-overview.jpeg'],
+  },
 ];
 
 export function getArtworkBySlug(slug: string): Artwork | undefined {
