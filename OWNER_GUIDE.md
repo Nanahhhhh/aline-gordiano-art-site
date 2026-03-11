@@ -99,7 +99,7 @@ status: 'sold',
 
 ## 📧 How to Change the Email Address
 
-Search for `alinegordianoart@gmail.com` across the project and replace with your new email.  
+Search for `contact@alinegordiano.art` across the project and replace with your new email.  
 Files to update:
 
 - `src/app/contact/page.tsx`

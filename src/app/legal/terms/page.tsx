@@ -63,8 +63,8 @@ export default function TermsPage() {
                     </h2>
                     <p>
                         For any questions about these Terms of Use, please contact{' '}
-                        <a href="mailto:alinegordianoart@gmail.com" className="text-[#C5521A] underline underline-offset-2">
-                            alinegordianoart@gmail.com
+                        <a href="mailto:contact@alinegordiano.art" className="text-[#C5521A] underline underline-offset-2">
+                            contact@alinegordiano.art
                         </a>.
                     </p>
                 </section>

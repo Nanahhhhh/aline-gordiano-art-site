@@ -60,8 +60,8 @@ export default function PrivacyPage() {
                     </h2>
                     <p>
                         Under UK GDPR, you have the right to access, correct or delete any personal data we hold about you. To exercise these rights, please contact us at{' '}
-                        <a href="mailto:alinegordianoart@gmail.com" className="text-[#C5521A] underline underline-offset-2">
-                            alinegordianoart@gmail.com
+                        <a href="mailto:contact@alinegordiano.art" className="text-[#C5521A] underline underline-offset-2">
+                            contact@alinegordiano.art
                         </a>.
                     </p>
                 </section>
@@ -72,8 +72,8 @@ export default function PrivacyPage() {
                     </h2>
                     <p>
                         For any privacy-related questions, please contact us at{' '}
-                        <a href="mailto:alinegordianoart@gmail.com" className="text-[#C5521A] underline underline-offset-2">
-                            alinegordianoart@gmail.com
+                        <a href="mailto:contact@alinegordiano.art" className="text-[#C5521A] underline underline-offset-2">
+                            contact@alinegordiano.art
                         </a>.
                     </p>
                 </section>

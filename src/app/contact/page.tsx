@@ -32,11 +32,11 @@ export default function ContactPage() {
               Email
             </h2>
             <a
-              href="mailto:alinegordianoart@gmail.com"
+              href="mailto:contact@alinegordiano.art"
               className="text-sm text-[#1F1F1F] hover:text-[#C5521A] transition-colors duration-200"
               style={{ fontFamily: 'var(--font-inter), sans-serif' }}
             >
-              alinegordianoart@gmail.com
+              contact@alinegordiano.art
             </a>
           </div>
 

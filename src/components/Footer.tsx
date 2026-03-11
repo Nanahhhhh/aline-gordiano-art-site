@@ -70,11 +70,11 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               <li>
                 <a
-                  href="mailto:alinegordianoart@gmail.com"
+                  href="mailto:contact@alinegordiano.art"
                   className="text-sm text-[#A09890] hover:text-[#F5F2EE] transition-colors duration-200"
                   style={{ fontFamily: 'var(--font-inter), sans-serif' }}
                 >
-                  alinegordianoart@gmail.com
+                  contact@alinegordiano.art
                 </a>
               </li>
               <li>
