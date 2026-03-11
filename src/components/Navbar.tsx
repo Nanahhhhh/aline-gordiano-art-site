@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         <Link href="/" className="flex flex-col gap-0.5" aria-label="Aline Gordiano Art home">
           <span
-            className="text-3xl text-[#1F1F1F]"
+            className="text-3xl text-[#1F1F1F] premium-gradient-text"
             style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 300, letterSpacing: '0.18em' }}
           >
             AG

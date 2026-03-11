@@ -70,7 +70,7 @@ export default function HomePage() {
               London · United Kingdom
             </p>
             <h1
-              className="text-[clamp(2.8rem,7vw,5.5rem)] font-light text-[#1F1F1F] mb-3 leading-[0.95]"
+              className="text-[clamp(2.8rem,7vw,5.5rem)] font-light text-[#1F1F1F] mb-3 leading-[0.95] premium-gradient-text"
               style={{ fontFamily: 'var(--font-cormorant), serif', letterSpacing: '-0.02em' }}
             >
               Aline Gordiano Art

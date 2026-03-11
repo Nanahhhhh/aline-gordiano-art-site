@@ -23,7 +23,8 @@ export const artworks: Artwork[] = [
     year: 2026,
     medium: 'Acrylic on canvas',
     dimensions: '60 × 80 cm',
-    status: 'available',
+    price: 'Sold for £370',
+    status: 'sold',
     tags: ['portrait', 'colour', 'contemporary'],
     image: '/artworks/einstein-portrait.jpeg',
     alt: 'Einstein Portrait by Aline Gordiano',
@@ -61,20 +62,6 @@ export const artworks: Artwork[] = [
     description:
       'An expressive study conveying quiet power and movement through rich reds and textural brushwork.',
     extraImages: ['/artworks/silent-strength-overview.jpeg'],
-  },
-  {
-    slug: 'luminous-earth',
-    title: 'Luminous Earth',
-    year: 2025,
-    medium: 'Acrylic on canvas',
-    dimensions: '60 × 80 cm',
-    price: '£560',
-    status: 'sold',
-    tags: ['earth tones', 'abstract', 'light'],
-    image: '/artworks/luminous-earth.svg',
-    alt: 'Luminous Earth by Aline Gordiano',
-    description:
-      'Marked as sold to help the site show both available and sold work sections in a more professional gallery format.',
   },
 ];
 
