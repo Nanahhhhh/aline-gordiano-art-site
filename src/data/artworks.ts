@@ -18,20 +18,19 @@ export interface Artwork {
 
 export const artworks: Artwork[] = [
   {
-    slug: 'einstein-portrait',
-    title: 'Einstein Portrait',
+    slug: 'silent-strength',
+    title: 'Silent Strength',
     year: 2026,
     medium: 'Acrylic on canvas',
-    dimensions: '60 × 80 cm',
-    price: 'Sold for £370',
-    status: 'sold',
-    tags: ['portrait', 'colour', 'contemporary'],
-    image: '/artworks/einstein-portrait.jpeg',
-    alt: 'Einstein Portrait by Aline Gordiano',
+    dimensions: '30 × 40 cm',
+    status: 'available',
+    tags: ['portrait', 'emotion', 'colour'],
+    image: '/artworks/silent-strength.jpeg',
+    alt: 'Silent Strength by Aline Gordiano',
     featured: true,
     description:
-      'A vivid portrait study with expressive colour contrasts and textured brushwork, creating a bold and instantly memorable presence.',
-    extraImages: ['/artworks/einstein-portrait-room.jpeg'],
+      'An expressive study conveying quiet power and movement through rich reds and textural brushwork.',
+    extraImages: ['/artworks/silent-strength-overview.jpeg'],
   },
   {
     slug: 'evening-path',
@@ -49,21 +48,6 @@ export const artworks: Artwork[] = [
     extraImages: ['/artworks/evening-path-overview.jpeg'],
   },
   {
-    slug: 'silent-strength',
-    title: 'Silent Strength',
-    year: 2026,
-    medium: 'Acrylic on canvas',
-    dimensions: '30 × 40 cm',
-    status: 'available',
-    tags: ['portrait', 'emotion', 'colour'],
-    image: '/artworks/silent-strength.jpeg',
-    alt: 'Silent Strength by Aline Gordiano',
-    featured: true,
-    description:
-      'An expressive study conveying quiet power and movement through rich reds and textural brushwork.',
-    extraImages: ['/artworks/silent-strength-overview.jpeg'],
-  },
-  {
     slug: 'quiet-tea',
     title: 'Quiet Tea',
     year: 2026,
@@ -73,10 +57,26 @@ export const artworks: Artwork[] = [
     tags: ['interior', 'still-life', 'light'],
     image: '/artworks/quiet-tea.jpeg',
     alt: 'Quiet Tea by Aline Gordiano',
-    featured: false,
+    featured: true,
     description:
       'A quiet interior moment captured through warm light and stillness — a simple cup of tea resting in the morning glow.',
     extraImages: ['/artworks/quiet-tea-overview.jpeg'],
+  },
+  {
+    slug: 'einstein-portrait',
+    title: 'Einstein Portrait',
+    year: 2026,
+    medium: 'Acrylic on canvas',
+    dimensions: '60 × 80 cm',
+    price: 'Sold for £370',
+    status: 'sold',
+    tags: ['portrait', 'colour', 'contemporary'],
+    image: '/artworks/einstein-portrait.jpeg',
+    alt: 'Einstein Portrait by Aline Gordiano',
+    featured: false,
+    description:
+      'A vivid portrait study with expressive colour contrasts and textured brushwork, creating a bold and instantly memorable presence.',
+    extraImages: ['/artworks/einstein-portrait-room.jpeg'],
   },
 ];
 

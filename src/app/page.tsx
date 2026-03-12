@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Aline Gordiano | Contemporary Painter in London | Original Acrylic Paintings',
     description:
       'Original acrylic paintings shaped by colour, texture and atmosphere. Explore the work of London-based artist Aline Gordiano.',
-    images: [{ url: '/artworks/einstein-portrait.jpeg', alt: 'Einstein Portrait by Aline Gordiano' }],
+    images: [{ url: '/artworks/golden-rain.jpeg', alt: 'Golden Rain by Aline Gordiano' }],
     siteName: 'Aline Gordiano Art',
     type: 'website',
   },
@@ -100,8 +100,8 @@ export default function HomePage() {
 
           <div className="relative w-full max-w-[540px] mx-auto lg:mx-0 aspect-[4/5] overflow-hidden bg-[#EDE8E2] shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
             <Image
-              src="/artworks/einstein-portrait.jpeg"
-              alt="Einstein Portrait by Aline Gordiano"
+              src="/artworks/golden-rain.jpeg"
+              alt="Golden Rain by Aline Gordiano"
               fill
               priority
               className="object-cover"
