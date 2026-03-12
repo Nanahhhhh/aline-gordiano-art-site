@@ -18,6 +18,21 @@ export interface Artwork {
 
 export const artworks: Artwork[] = [
   {
+    slug: 'blush-tulips',
+    title: 'Blush Tulips',
+    year: 2026,
+    medium: 'Acrylic on canvas',
+    dimensions: '30 × 40 cm',
+    status: 'available',
+    tags: ['floral', 'still-life', 'colour'],
+    image: '/artworks/blush-tulips.jpeg',
+    alt: 'Blush Tulips by Aline Gordiano',
+    featured: true,
+    description:
+      'A delicate floral study capturing the soft textures and vibrant tones of blooming tulips.',
+    extraImages: ['/artworks/blush-tulips-overview.jpeg'],
+  },
+  {
     slug: 'silent-strength',
     title: 'Silent Strength',
     year: 2026,
