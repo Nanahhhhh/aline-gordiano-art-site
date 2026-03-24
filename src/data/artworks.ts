@@ -97,6 +97,21 @@ export const artworks: Artwork[] = [
       'A vivid portrait study with expressive colour contrasts and textured brushwork, creating a bold and instantly memorable presence.',
     extraImages: ['/artworks/einstein-portrait-room.jpeg'],
   },
+  {
+    slug: 'winter-reflection',
+    title: 'Winter Reflection',
+    year: 2026,
+    medium: 'Acrylic on canvas',
+    dimensions: '35 × 91 cm',
+    status: 'available',
+    tags: ['landscape', 'winter', 'reflection'],
+    image: '/artworks/winter-reflection.jpeg',
+    alt: 'Winter Reflection by Aline Gordiano',
+    featured: true,
+    description:
+      'A tranquil winter scene illuminated by a warm sun, reflected across still water in soft, textured brushwork.',
+    extraImages: ['/artworks/winter-reflection-overview.jpeg'],
+  },
 ];
 
 export function getArtworkBySlug(slug: string): Artwork | undefined {
