@@ -103,9 +103,10 @@ export const artworks: Artwork[] = [
     year: 2026,
     medium: 'Acrylic on canvas',
     dimensions: '35 × 91 cm',
+    price: '£340',
     status: 'available',
     tags: ['landscape', 'winter', 'reflection'],
-    image: '/artworks/winter-reflection.jpeg',
+    image: '/artworks/winter-reflection-white-wall.jpeg',
     alt: 'Winter Reflection by Aline Gordiano',
     featured: true,
     description:
