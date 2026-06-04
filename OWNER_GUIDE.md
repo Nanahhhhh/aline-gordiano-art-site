@@ -4,6 +4,56 @@ This guide explains how to manage the content of your website without needing te
 
 ---
 
+## ⚠️ CRITICAL PROJECT INFORMATION
+
+### Correct Website
+- **Public URL:** www.alinegordiano.art
+- **Preview URL:** https://aline-gordiano.vercel.app
+
+### Correct GitHub Repository
+- **URL:** https://github.com/Nanahhhhh/aline-gordiano-art-site
+- **User:** Nanahhhhh
+- **Project:** aline-gordiano-art-site
+
+### Correct Local Folder
+- **Path:** `/Users/naty/Downloads/aline-gordiano-art-site-main`
+- **Folder name:** `aline-gordiano-art-site-main`
+
+---
+
+## 🚀 QUICK START
+
+### First Time - Install Dependencies
+```bash
+npm install
+```
+
+### Run Site Locally
+```bash
+npm run dev
+```
+Then open: **http://localhost:3000**
+
+### How to Save Changes
+- Press: **Cmd + S** (Mac) or **Ctrl + S** (Windows/Linux)
+- Changes appear instantly in the browser
+
+### How to Publish Changes
+```bash
+git add .
+git commit -m "Description of your changes"
+git push origin main
+```
+Your website will update automatically in 2-3 minutes at www.alinegordiano.art
+
+### ⛔ DO NOT USE
+- ❌ Do NOT use old repositories like `aline-gordiano-old`
+- ❌ Do NOT duplicate repositories
+- ❌ Do NOT delete the folder without confirming GitHub is updated
+- ✅ ALWAYS use: `aline-gordiano-art-site`
+
+---
+
 ## 📁 Where Is My Artwork Data?
 
 All artwork information lives in one file:
