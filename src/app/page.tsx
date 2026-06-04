@@ -85,7 +85,7 @@ export default function HomePage() {
               className="text-sm text-[#6B6B6B] max-w-xl leading-relaxed mb-10 mx-auto lg:mx-0"
               style={{ fontFamily: 'var(--font-inter), sans-serif' }}
             >
-              Aline Gordiano is a London-based artist creating original works in acrylic on canvas, with a focus on expressive portraiture, luminous landscapes and painterly texture.
+              Aline Gordiano is a London-based artist creating original works in acrylic and oil, with a focus on expressive portraiture, luminous landscapes and painterly texture.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
