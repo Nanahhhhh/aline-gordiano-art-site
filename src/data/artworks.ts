@@ -103,7 +103,7 @@ export const artworks: Artwork[] = [
     year: 2026,
     medium: 'Acrylic on canvas',
     dimensions: '35 × 91 cm',
-    price: '£340',
+    price: '£360',
     status: 'available',
     tags: ['landscape', 'winter', 'reflection'],
     image: '/artworks/winter-reflection-white-wall.jpeg',
