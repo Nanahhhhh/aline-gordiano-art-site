@@ -79,7 +79,7 @@ export default function HomePage() {
               className="text-base text-[#6B6B6B] tracking-widest uppercase mb-5"
               style={{ fontFamily: 'var(--font-inter), sans-serif', fontWeight: 400 }}
             >
-              Original acrylic paintings shaped by colour, texture and atmosphere.
+              Original acrylic and oil paintings shaped by colour, texture and atmosphere.
             </p>
             <p
               className="text-sm text-[#6B6B6B] max-w-xl leading-relaxed mb-10 mx-auto lg:mx-0"
