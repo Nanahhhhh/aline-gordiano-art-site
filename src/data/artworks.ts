@@ -42,12 +42,12 @@ export const artworks: Artwork[] = [
     price: '£395',
     status: 'available',
     tags: ['portrait', 'emotion', 'colour'],
-    image: '/artworks/silent-strength.jpeg',
+    image: '/artworks/silent-strength-main.jpeg',
     alt: 'Silent Strength by Aline Gordiano',
     featured: true,
     description:
       'An expressive study conveying quiet power and movement through rich reds and textural brushwork.',
-    extraImages: ['/artworks/silent-strength-overview.jpeg'],
+    extraImages: ['/artworks/silent-strength-overview.jpeg', '/artworks/silent-strength-detail.jpeg'],
   },
   {
     slug: 'evening-path',
