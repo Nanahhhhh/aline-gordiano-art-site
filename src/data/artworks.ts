@@ -39,7 +39,7 @@ export const artworks: Artwork[] = [
     year: 2026,
     medium: 'Acrylic on canvas',
     dimensions: '30 × 40 cm',
-    price: '£250',
+    price: '£395',
     status: 'available',
     tags: ['portrait', 'emotion', 'colour'],
     image: '/artworks/silent-strength.jpeg',
