@@ -47,7 +47,7 @@ export const artworks: Artwork[] = [
     featured: true,
     description:
       'An expressive study conveying quiet power and movement through rich reds and textural brushwork.',
-    extraImages: ['/artworks/silent-strength-overview.jpeg', '/artworks/silent-strength-detail.jpeg'],
+    extraImages: ['/artworks/silent-strength-gallery.jpeg'],
   },
   {
     slug: 'evening-path',
