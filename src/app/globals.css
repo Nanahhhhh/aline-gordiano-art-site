@@ -216,4 +216,33 @@
     padding: 3px 10px;
     border-radius: 20px;
   }
+
+  /* Certificate & Print Overrides */
+  .certificate-view header,
+  .certificate-view footer {
+    display: none !important;
+  }
+
+  @media print {
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    
+    html, body {
+      background: white !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    header, footer, nav {
+      display: none !important;
+    }
+
+    .certificate-view {
+      background: white !important;
+    }
+  }
 }
