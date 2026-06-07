@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const footerLinks = [
   { href: '/gallery', label: 'Gallery' },
-  { href: '/shop', label: 'Prints' },
+  { href: '/shop', label: 'Shop' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -34,7 +34,7 @@ export default function Footer() {
               </p>
             </div>
             <p className="text-sm text-[#A09890] leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              Original acrylic paintings by London-based artist Aline Gordiano. Unique works and selected prints.
+              Original acrylic paintings by London-based artist Aline Gordiano. Unique works available directly from the artist.
             </p>
           </div>
 
