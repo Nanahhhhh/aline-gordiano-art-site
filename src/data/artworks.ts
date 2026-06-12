@@ -14,6 +14,8 @@ export interface Artwork {
   featured?: boolean;
   description?: string;
   extraImages?: string[];
+  seoTitle?: string;
+  seoDescription?: string;
 }
 
 export const artworks: Artwork[] = [
@@ -112,6 +114,24 @@ export const artworks: Artwork[] = [
     description:
       'A tranquil winter scene illuminated by a warm sun, reflected across still water in soft, textured brushwork.',
     extraImages: ['/artworks/winter-reflection-overview.jpeg'],
+  },
+  {
+    slug: 'hidden-waterfall',
+    title: 'Hidden Waterfall',
+    year: 2026,
+    medium: 'Oil on Canvas',
+    dimensions: '20 × 20 cm',
+    price: '£195',
+    status: 'available',
+    tags: ['landscape', 'nature', 'water', 'oil'],
+    image: '/artworks/Hidden Waterfall.jpeg',
+    alt: 'Hidden Waterfall by Aline Gordiano',
+    featured: true,
+    description:
+      'Hidden Waterfall captures a peaceful and secluded corner of nature where crystal-clear water flows gently between ancient rocks beneath vibrant green foliage. Inspired by the tranquility of untouched landscapes, this painting invites the viewer into a quiet natural sanctuary filled with light, movement and reflection.',
+    extraImages: ['/artworks/hidden.png'],
+    seoTitle: 'Hidden Waterfall | Original Oil Painting by Aline Gordiano',
+    seoDescription: 'Original oil painting on canvas by Aline Gordiano. Hidden Waterfall is a serene landscape inspired by the beauty of nature and flowing water.',
   },
 ];
 

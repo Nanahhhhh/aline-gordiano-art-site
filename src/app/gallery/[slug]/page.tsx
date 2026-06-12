@@ -18,9 +18,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const artwork = getArtworkBySlug(slug);
   if (!artwork) return { title: 'Artwork Not Found' };
   return {
-    title: `${artwork.title} (${artwork.year})`,
+    title: artwork.seoTitle ?? `${artwork.title} (${artwork.year})`,
     description:
-      artwork.description ?? `${artwork.title} — ${artwork.medium}, ${artwork.dimensions}. By Aline Gordiano.`,
+      artwork.seoDescription ?? artwork.description ?? `${artwork.title} — ${artwork.medium}, ${artwork.dimensions}. By Aline Gordiano.`,
     openGraph: {
       images: [{ url: artwork.image, alt: artwork.alt }],
     },
