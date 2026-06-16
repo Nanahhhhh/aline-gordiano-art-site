@@ -122,7 +122,7 @@ export const artworks: Artwork[] = [
     title: 'Hidden Waterfall',
     year: 2026,
     code: 'AG-HW-2026-001',
-    medium: 'Acrylic and Oil on Canvas',
+    medium: 'Oil on Canvas',
     dimensions: '20 × 20 cm',
     price: '£395',
     status: 'available',
