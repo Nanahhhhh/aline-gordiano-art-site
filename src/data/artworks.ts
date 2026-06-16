@@ -148,7 +148,6 @@ export const artworks: Artwork[] = [
     image: '/artworks/apple.jpg',
     alt: 'Original Apple Oil Painting by Aline Gordiano',
     featured: true,
-    extraImages: ['/artworks/apple-gallery.jpg'],
   },
   {
     slug: 'pear-still-life',
@@ -163,7 +162,6 @@ export const artworks: Artwork[] = [
     image: '/artworks/pear.jpg',
     alt: 'Pear Still Life by Aline Gordiano',
     featured: true,
-    extraImages: ['/artworks/pear-gallery.jpg'],
   },
   {
     slug: 'quinces-and-blue-bottle',

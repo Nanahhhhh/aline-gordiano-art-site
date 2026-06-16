@@ -44,6 +44,14 @@ export default async function ArtworkDetailPage({ params }: Props) {
   if (!artwork) notFound();
 
   const prefilledSubject = `Enquiry about "${artwork.title}"`;
+  const isQuinces = artwork.slug === 'quinces-and-blue-bottle';
+  const imageClassName = isQuinces ? 'object-contain' : 'object-cover';
+  const imageFrameClassName = isQuinces
+    ? 'relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden max-h-[58vh]'
+    : 'relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden';
+  const extraImageGridClassName = isQuinces
+    ? 'mt-4 grid grid-cols-2 gap-3 max-w-[82%] mx-auto'
+    : 'mt-6 grid grid-cols-2 gap-4';
 
   return (
     <div className="pt-28 pb-24 px-6 lg:px-12 max-w-7xl mx-auto">
@@ -57,25 +65,25 @@ export default async function ArtworkDetailPage({ params }: Props) {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         <div>
-          <div className="relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden">
+          <div className={imageFrameClassName}>
             <Image
               src={artwork.image}
               alt={artwork.alt}
               fill
-              className="object-cover"
+              className={imageClassName}
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority
             />
           </div>
           {artwork.extraImages && artwork.extraImages.length > 0 && (
-            <div className="mt-6 grid grid-cols-2 gap-4">
+            <div className={extraImageGridClassName}>
               {artwork.extraImages.map((src, idx) => (
-                <div key={idx} className="relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden">
+                <div key={idx} className={imageFrameClassName}>
                   <Image
                     src={src}
                     alt={`${artwork.title} detail ${idx + 1}`}
                     fill
-                    className="object-cover"
+                    className={imageClassName}
                     sizes="(max-width: 1024px) 100vw, 25vw"
                     loading="lazy"
                   />
