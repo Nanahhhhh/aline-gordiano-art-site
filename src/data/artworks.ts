@@ -10,6 +10,7 @@ export interface Artwork {
   status: ArtworkStatus;
   tags: string[];
   image: string;
+  cardImage?: string;
   alt: string;
   featured?: boolean;
   description?: string;
@@ -163,6 +164,7 @@ export const artworks: Artwork[] = [
     image: '/artworks/pear.jpg',
     alt: 'Pear Still Life by Aline Gordiano',
     featured: true,
+    extraImages: ['/artworks/pear-gallery.jpg'],
   },
   {
     slug: 'quinces-and-blue-bottle',
@@ -175,6 +177,7 @@ export const artworks: Artwork[] = [
     status: 'available',
     tags: ['still-life', 'fruit', 'bottle', 'oil'],
     image: '/artworks/quinces-and-blue-bottle.jpg',
+    cardImage: '/artworks/quinces-and-blue-bottle-gallery.jpg',
     alt: 'Quinces and Blue Bottle by Aline Gordiano',
     featured: true,
     extraImages: ['/artworks/quinces-and-blue-bottle-gallery.jpg'],

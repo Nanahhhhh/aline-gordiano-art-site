@@ -44,14 +44,9 @@ export default async function ArtworkDetailPage({ params }: Props) {
   if (!artwork) notFound();
 
   const prefilledSubject = `Enquiry about "${artwork.title}"`;
-  const isQuinces = artwork.slug === 'quinces-and-blue-bottle';
-  const imageClassName = isQuinces ? 'object-contain' : 'object-cover';
-  const imageFrameClassName = isQuinces
-    ? 'relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden max-h-[58vh]'
-    : 'relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden';
-  const extraImageGridClassName = isQuinces
-    ? 'mt-4 grid grid-cols-2 gap-3 max-w-[82%] mx-auto'
-    : 'mt-6 grid grid-cols-2 gap-4';
+  const imageFrameClassName = 'relative aspect-[4/5] bg-[#EDE8E2] overflow-hidden';
+  const extraImageFrameClassName =
+    'relative aspect-[4/5] w-full max-w-[520px] bg-[#F7F3EE] overflow-hidden mx-auto';
 
   return (
     <div className="pt-28 pb-24 px-6 lg:px-12 max-w-7xl mx-auto">
@@ -70,21 +65,21 @@ export default async function ArtworkDetailPage({ params }: Props) {
               src={artwork.image}
               alt={artwork.alt}
               fill
-              className={imageClassName}
+              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority
             />
           </div>
           {artwork.extraImages && artwork.extraImages.length > 0 && (
-            <div className={extraImageGridClassName}>
+            <div className="mt-4 grid grid-cols-1 gap-4">
               {artwork.extraImages.map((src, idx) => (
-                <div key={idx} className={imageFrameClassName}>
+                <div key={idx} className={extraImageFrameClassName}>
                   <Image
                     src={src}
                     alt={`${artwork.title} detail ${idx + 1}`}
                     fill
-                    className={imageClassName}
-                    sizes="(max-width: 1024px) 100vw, 25vw"
+                    className="object-contain"
+                    sizes="(max-width: 640px) 100vw, 520px"
                     loading="lazy"
                   />
                 </div>
