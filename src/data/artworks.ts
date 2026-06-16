@@ -10,7 +10,6 @@ export interface Artwork {
   status: ArtworkStatus;
   tags: string[];
   image: string;
-  galleryImage?: string;
   alt: string;
   featured?: boolean;
   description?: string;
@@ -147,7 +146,6 @@ export const artworks: Artwork[] = [
     status: 'available',
     tags: ['still-life', 'food', 'oil'],
     image: '/artworks/apple.jpg',
-    galleryImage: '/artworks/apple-gallery.jpg',
     alt: 'Original Apple Oil Painting by Aline Gordiano',
     featured: true,
     extraImages: ['/artworks/apple-gallery.jpg'],
@@ -163,7 +161,6 @@ export const artworks: Artwork[] = [
     status: 'available',
     tags: ['still-life', 'food', 'oil'],
     image: '/artworks/pear.jpg',
-    galleryImage: '/artworks/pear-gallery.jpg',
     alt: 'Pear Still Life by Aline Gordiano',
     featured: true,
     extraImages: ['/artworks/pear-gallery.jpg'],
@@ -179,7 +176,6 @@ export const artworks: Artwork[] = [
     status: 'available',
     tags: ['still-life', 'fruit', 'bottle', 'oil'],
     image: '/artworks/quinces-and-blue-bottle.jpg',
-    galleryImage: '/artworks/quinces-and-blue-bottle-gallery.jpg',
     alt: 'Quinces and Blue Bottle by Aline Gordiano',
     featured: true,
     extraImages: ['/artworks/quinces-and-blue-bottle-gallery.jpg'],
