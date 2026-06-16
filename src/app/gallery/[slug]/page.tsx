@@ -100,6 +100,7 @@ export default async function ArtworkDetailPage({ params }: Props) {
 
           <dl className="grid grid-cols-2 gap-y-4 gap-x-8">
             {[
+              artwork.code ? { label: 'Code', value: artwork.code } : null,
               { label: 'Year', value: artwork.year },
               { label: 'Medium', value: artwork.medium },
               { label: 'Dimensions', value: artwork.dimensions },

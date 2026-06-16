@@ -10,12 +10,14 @@ export interface Artwork {
   status: ArtworkStatus;
   tags: string[];
   image: string;
+  galleryImage?: string;
   alt: string;
   featured?: boolean;
   description?: string;
   extraImages?: string[];
   seoTitle?: string;
   seoDescription?: string;
+  code?: string;
 }
 
 export const artworks: Artwork[] = [
@@ -119,12 +121,13 @@ export const artworks: Artwork[] = [
     slug: 'hidden-waterfall',
     title: 'Hidden Waterfall',
     year: 2026,
-    medium: 'Oil on Canvas',
+    code: 'AG-HW-2026-001',
+    medium: 'Acrylic and Oil on Canvas',
     dimensions: '20 × 20 cm',
-    price: '£195',
+    price: '£395',
     status: 'available',
     tags: ['landscape', 'nature', 'water', 'oil'],
-    image: '/artworks/Hidden Waterfall.jpeg',
+    image: '/artworks/hidden-waterfall.jpeg',
     alt: 'Hidden Waterfall by Aline Gordiano',
     featured: true,
     description:
@@ -132,6 +135,54 @@ export const artworks: Artwork[] = [
     extraImages: ['/artworks/hidden.png'],
     seoTitle: 'Hidden Waterfall | Original Oil Painting by Aline Gordiano',
     seoDescription: 'Original oil painting on canvas by Aline Gordiano. Hidden Waterfall is a serene landscape inspired by the beauty of nature and flowing water.',
+  },
+  {
+    slug: 'original-apple-oil-painting',
+    title: 'Original Apple Oil Painting',
+    year: 2026,
+    code: 'AG-AP-2026-001',
+    medium: 'Oil on Canvas',
+    dimensions: '20 × 20 cm',
+    price: '£155',
+    status: 'available',
+    tags: ['still-life', 'food', 'oil'],
+    image: '/artworks/apple.jpg',
+    galleryImage: '/artworks/apple-gallery.jpg',
+    alt: 'Original Apple Oil Painting by Aline Gordiano',
+    featured: true,
+    extraImages: ['/artworks/apple-gallery.jpg'],
+  },
+  {
+    slug: 'pear-still-life',
+    title: 'Pear Still Life',
+    year: 2026,
+    code: 'AG-PR-2026-001',
+    medium: 'Oil on Canvas',
+    dimensions: '20 × 20 cm',
+    price: '£125',
+    status: 'available',
+    tags: ['still-life', 'food', 'oil'],
+    image: '/artworks/pear.jpg',
+    galleryImage: '/artworks/pear-gallery.jpg',
+    alt: 'Pear Still Life by Aline Gordiano',
+    featured: true,
+    extraImages: ['/artworks/pear-gallery.jpg'],
+  },
+  {
+    slug: 'quinces-and-blue-bottle',
+    title: 'Quinces and Blue Bottle',
+    year: 2026,
+    code: 'AG-QB-2026-001',
+    medium: 'Oil on Canvas',
+    dimensions: '20 × 20 cm',
+    price: '£155',
+    status: 'available',
+    tags: ['still-life', 'fruit', 'bottle', 'oil'],
+    image: '/artworks/quinces-and-blue-bottle.jpg',
+    galleryImage: '/artworks/quinces-and-blue-bottle-gallery.jpg',
+    alt: 'Quinces and Blue Bottle by Aline Gordiano',
+    featured: true,
+    extraImages: ['/artworks/quinces-and-blue-bottle-gallery.jpg'],
   },
 ];
 

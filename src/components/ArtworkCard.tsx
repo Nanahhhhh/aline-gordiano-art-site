@@ -27,7 +27,7 @@ export default function ArtworkCard({ artwork }: ArtworkCardProps) {
     >
       <div className="relative overflow-hidden bg-[#EDE8E2] aspect-[4/5]">
         <Image
-          src={artwork.image}
+          src={artwork.galleryImage ?? artwork.image}
           alt={artwork.alt}
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-105"
