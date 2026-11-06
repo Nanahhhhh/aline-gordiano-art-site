@@ -75,7 +75,7 @@ export const artworks: Artwork[] = [
     year: 2026,
     medium: 'Acrylic on canvas',
     dimensions: '30 × 40 cm',
-    price: '£100',
+    price: '£250',
     status: 'available',
     tags: ['interior', 'still-life', 'light'],
     image: '/artworks/quiet-tea.jpeg',
